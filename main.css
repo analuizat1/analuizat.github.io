@@ -1,0 +1,77 @@
+.introducao {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  align-items: center;
+}
+.introducao h2 {
+  font-size: 4.5rem;
+  line-height: 1.125;
+  margin-bottom: 30px;
+  position: relative;
+}
+.introducao h2::before {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url("./imagens/duasbarras.svg") no-repeat center;
+  position: absolute;
+  top: -15px;
+  left: -40px;
+  z-index: -1;
+}
+.foto {
+  display: grid;
+  max-width: 330px;
+  padding-left: 40px;
+  padding-bottom: 30px;
+}
+.descricao p {
+  font-size: 1.5rem;
+  color: #525252;
+}
+@media (max-width: 1000px) {
+  .introducao h2 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 800px) {
+  .introducao {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .introducao h2 {
+    font-size: 2rem;
+  }
+  .introducao h2::before {
+    width: 30px;
+    height: 10px;
+    left: 0px;
+  }
+  .foto {
+    width: 200px;
+    padding: 10px;
+  }
+}
+@media (min-width: 306px) and (max-width: 800px) {
+  .introducao img {
+    padding-left: 60px;
+  }
+}
+@media (min-width: 401px) and (max-width: 528px) {
+  .introducao img {
+    padding-left: 20px;
+  }
+}
+@media (max-width: 400px) {
+  .introducao img {
+    display: none;
+  }
+  .introducao {
+    grid-template-columns: 1fr;
+  }
+}
