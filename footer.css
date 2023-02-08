@@ -33,7 +33,7 @@ footer {
 @media (max-width: 800px) {
   .footer-container {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 50px;
     padding: 60px 20px;
   }
   .footer-contato li {
