@@ -74,4 +74,14 @@
   .introducao {
     grid-template-columns: 1fr;
   }
+  .introducao h2 {
+    font-size: 3rem;
+    position: relative;
+  }
+  .introducao h2::before {
+    width: 30px;
+    height: 10px;
+    left: 0px;
+    position: absolute;
+  }
 }
